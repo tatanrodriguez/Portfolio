@@ -205,10 +205,11 @@ h1 strong {
     margin: 20px auto 10px;
     display: flex;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .skills-article a:hover {
-    letter-spacing:2px;
+    letter-spacing:3px;
     transition: .2s;
 }
 .skills-article a::after {
