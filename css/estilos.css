@@ -303,6 +303,7 @@ footer {
 .top a i {
     transition: .2s ease-in-out;
     font-size:25px;
+  
 }
 
 .top:hover i {
@@ -312,4 +313,5 @@ footer {
 .top a {
     color:white;
     text-decoration: none;
+    padding: 20px;
 }
