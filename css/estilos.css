@@ -3,6 +3,9 @@
   margin:0;
   font-family: sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: rgb(235, 235, 235);
