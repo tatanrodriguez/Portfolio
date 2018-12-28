@@ -257,6 +257,12 @@ h1 strong {
     border-radius: 20px;
 }
 
+.form-email textarea {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
 
 
 .form-email input, textarea::placeholder {
