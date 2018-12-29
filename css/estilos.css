@@ -314,3 +314,26 @@ footer {
     text-decoration: none;
     padding: 20px;
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    margin: 0px 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+      opacity:1;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius:10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    width:20px;
+  }
