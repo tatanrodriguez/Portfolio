@@ -318,7 +318,7 @@ footer {
 /* scroll bar */
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
     margin: 0px 3px;
   }
 
