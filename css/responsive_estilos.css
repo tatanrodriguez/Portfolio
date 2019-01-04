@@ -73,6 +73,10 @@
        background: white;
    }
 
+   .container_btn_menu {
+    display: block;
+  }
+
    
 }
 
@@ -81,4 +85,6 @@
         margin: 15px auto;
        padding:20px 10px;
    }
+
+   
 }
