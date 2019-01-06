@@ -24,6 +24,7 @@ h1, h2 {
     font-weight:100;
     letter-spacing: 10px;
     text-align: center;
+   
 }
 
 h1 strong {
@@ -36,8 +37,13 @@ h2 {
     padding: 30px;
 }
 
+.menuactive {
+    left:0%;
+    
+}
+
 #seccionuno {
-    padding:60px 0 190px 0; 
+    padding:100px 0 190px 0; 
     min-height: 300px;
     background: rgb(235, 235, 235);
     display: flex;
@@ -49,7 +55,8 @@ h2 {
 .header {
     color:black;
     background: rgb(235, 235, 235);
-   position: fixed;
+   position: sticky;
+   top:0;
    width: 100%;
 }
 
@@ -109,6 +116,7 @@ h2 {
 
 h1 strong {
     color:black;
+  
 }
 
 .project {
@@ -349,10 +357,7 @@ footer {
 
   /*menu */
 
-  .container_btn_menu {
-    display: none;
-  }
-
+ 
   #btn {
       display: none;
   }
@@ -361,7 +366,7 @@ footer {
     cursor: pointer;
     width: 40px;
     height: 35px;
-    top: 10px;
+    top: 15px;
     right: 10px;
     display: flex;
     justify-content: center;
@@ -429,9 +434,6 @@ label > div{
 }
 
 
-/*  animacion del boton para el menu nav */
-
-#btn:checked ~ #nav {
-    transform: translateX(0%);
-    transition: .5s;
+.container_btn_menu {
+    display: none;
 }

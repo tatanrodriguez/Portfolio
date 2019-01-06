@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width:1024px) {
    /*skills*/
 .skills-container {
@@ -39,23 +41,31 @@
 }
 
 @media screen and (max-width:480px) {
+
+   
+    
    /* responsive menu */
-    .header nav {
+    .menu {
        position: fixed;
-       width: 100%;
+       width: 80%;
        height: 100%;
        background: black;
        padding: 0px;
        margin: 0px;
        z-index: 10;
        top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       transition: transform 1s ease-in-out;
-       transform: translateX(-100%);
-       
+       left:-100%;
+       right:0;
+        bottom: 0;
+        transition: all 1s ease-in-out;
+     
    }
+
+   .menuactive {
+    left:0%;
+    
+}
+
    .header-container {
        width: 100%;
    }
