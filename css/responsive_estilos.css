@@ -90,7 +90,9 @@
 .header  a:hover::before {
     background: white;
 }
-
+.header-container nav {
+    flex-direction: column;
+}
 
 }
 
