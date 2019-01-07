@@ -306,12 +306,15 @@ footer {
     height: 50px;
     position: fixed;
     bottom:0px;
-    right:0px;
+    right:-50px;
     background: black;
     color:white;
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
 }
 
 .top a i {
@@ -328,6 +331,13 @@ footer {
     color:white;
     text-decoration: none;
     padding: 20px;
+}
+
+.topnone {
+    
+    visibility: visible;
+    opacity: 1;
+    right: 0px;
 }
 
 /* scroll bar */

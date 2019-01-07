@@ -1,3 +1,6 @@
+
+//--------inicio del codigo del menu-------------
+
 // variables 
 const response = window.matchMedia('screen and (max-width: 768px)');
 const menu = document.querySelector('.menu');
@@ -39,7 +42,7 @@ function validationItems(event) {
 
 validationItems(response);
 
-//funcion de interactividaddel menu
+//funcion de interactividad del menu
 function hideShow() {
    if(menu.classList.contains('menuactive')) {
     menu.classList.remove('menuactive');
@@ -48,6 +51,7 @@ function hideShow() {
    }  
 }
 
+//funcion de interactividad de los items y del boton del menu
 function checkBtn() {
   if (btnMenu.checked == true) {
     btnMenu.checked = false;
@@ -55,6 +59,36 @@ function checkBtn() {
     btnMenu.checked = true;
   }
 }
+
+
+
+//---------------cierre del menu------------
+
+//--------inicio del codigo del boton back to top--------
+
+// boton top 0
+const btnTop = document.querySelector('#btnt');
+
+btnTop.addEventListener('click', backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// animacion boton opacity
+const scrollVentana = window.onscroll = () => topScroll();
+
+function topScroll() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.querySelector('#btnt').classList.add('topnone');
+  } else {
+    document.querySelector('#btnt').classList.remove('topnone');
+  }
+}
+//-------cierre del codigo del boton back to top--------
+
+//------------ventana modal------------
 
 
 
