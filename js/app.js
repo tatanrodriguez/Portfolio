@@ -108,16 +108,16 @@ linkportafolio.addEventListener('click', desplazarp);
 
 
 function desplazarc() {
-  window.scrollTo(0,medcont);
+  window.scrollTo(0,medcont - 20);
   // contacto.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
 }
 
 function desplazark() {
-  window.scrollTo(0,medskills - 50);
+  window.scrollTo(0,medskills - 35);
    // skills.scrollIntoView(true);
 }
 
 function desplazarp() {
-  window.scrollTo(0,medport - 50);
+  window.scrollTo(0,medport - 35);
   // portfolio.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
 }

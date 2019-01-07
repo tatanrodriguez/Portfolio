@@ -8,6 +8,13 @@
 }
 
 @media screen and (max-width:768px) {
+
+    .header ol {
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
    /* seccion uno  */
    h1, h2 {
     font-size: 28px;
