@@ -89,6 +89,35 @@ function topScroll() {
 //-------cierre del codigo del boton back to top--------
 
 //------------ventana modal------------
+const portfolio = document.getElementById('portafolio');
+const skills = document.getElementById('skills');
+const contacto = document.getElementById('contacto'); 
+
+const linkContacto = document.querySelector('#linkcontacto');
+const linkskills = document.querySelector('#linkskills');
+const linkporafolio = document.querySelector('#linkporafolio');
+
+const medskills = skills.offsetTop;
+const medcont = contacto.offsetTop;
+const medport = portafolio.offsetTop;
+
+linkContacto.addEventListener('click', desplazarc);
+linkskills.addEventListener('click', desplazark);
+linkportafolio.addEventListener('click', desplazarp);
 
 
 
+function desplazarc() {
+  window.scrollTo(0,medcont);
+  // contacto.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
+}
+
+function desplazark() {
+  window.scrollTo(0,medskills - 50);
+   // skills.scrollIntoView(true);
+}
+
+function desplazarp() {
+  window.scrollTo(0,medport - 50);
+  // portfolio.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
+}
