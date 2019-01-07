@@ -80,7 +80,7 @@ function backToTop() {
 const scrollVentana = window.onscroll = () => topScroll();
 
 function topScroll() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.querySelector('#btnt').classList.add('topnone');
   } else {
     document.querySelector('#btnt').classList.remove('topnone');
