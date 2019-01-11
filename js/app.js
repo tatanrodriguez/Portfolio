@@ -88,7 +88,7 @@ function topScroll() {
 }
 //-------cierre del codigo del boton back to top--------
 
-//------------ventana modal------------
+//------------scroll navigation------------
 const portfolio = document.getElementById('portafolio');
 const skills = document.getElementById('skills');
 const contacto = document.getElementById('contacto'); 
@@ -121,3 +121,23 @@ function desplazarp() {
   window.scrollTo(0,medport)
   // portfolio.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
 }
+
+//----------ventana modal----------
+
+const clickmodalUno = document.querySelector('#click-modal-uno');
+const modalOverlay = document.querySelectorAll('.modal-overlay') ;
+const modalUno = document.querySelector('.modal-uno');
+const clickCerrar = document.querySelectorAll('.cerrar');
+
+clickmodalUno.addEventListener('click', showmodal);
+clickCerrar[0].addEventListener('click', hideModal);
+
+function showmodal() {
+  modalOverlay[0].classList.add('modal-overlay-active');
+  modalUno.classList.add('modal-uno-active');
+}
+function hideModal() {
+  modalOverlay[0].classList.remove('modal-overlay-active');
+  modalUno.classList.remove('modal-uno-active');
+}
+
